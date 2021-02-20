@@ -1,288 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Complete Bootstrap 4 Website Layout</title>
+    <title>♡ Stray Kids ♡</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="https://kit.fontawesome.com/468ec12282.js" crossorigin="anonymous"></script>
     <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="img/skzlogo.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Members</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Merch</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--- Image Slider -->
+    <div id="slides" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#slides" data-slide-to="0" class="active"></li>
+            <li data-target="#slides" data-slide-to="1"></li>
+            <li data-target="#slides" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/skzbackground2.png">
+                <div class="carousel-caption">
+                    <h1 class="display-2">Stray Kids</h1>
+                    <h3>K-Pop Group Overview</h3>
+                    <button type="button" class="btn btn-outline-light btn-lg">ABOUT KPOP</button>
+                    <button type="button" class="btn btn-primary btn-lg">Member Profiles</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/skzbackground.png">
+            </div>
+            <div class="carousel-item">
+                <img src="img/skzbackground3.png">
+            </div>
+        </div>
+    </div>
+
+    <!--- Jumbotron -->
     <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" 
-        data-target="#navbarResponsive">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Team</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Connect</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<!--- Image Slider -->
-<div id="slides" class="carousel slide" data-ride="carousel">
-    <ul class="carousel-indicators">
-        <li data-target="#slides" data-slide-to="0" class="active"></li>
-        <li data-target="#slides" data-slide-to="1"></li>
-        <li data-target="#slides" data-slide-to="2"></li>
-    </ul>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="img/background.png">
-            <div class="carousel-caption">
-                <h1 class="display-2">Bootstrap</h1>
-                <h3>Complete Website Layout</h3>
-                <button type="button" class="btn btn-outline-light btn-lg">VIEW DEMO</button>
-                <button type="button" class="btn btn-primary btn-lg">Get Started</button>
+        <div class="row jumbotron">
+            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+                <p class="lead">Stray Kids is a highly popular K-pop band whose music spans across a wide variety of
+                    genres, including electropop, EDM, Hip Hop, R&B, rock, and many more.</p>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+                <a href="#"><button type="button" class="btn btn-outline-secondary btn-lg">Music Details</button></a>
             </div>
         </div>
-        <div class="carousel-item">
-            <img src="img/background2.png">
-        </div>
-        <div class="carousel-item">
-            <img src="img/background3.png">
-        </div>
     </div>
-</div>
 
-<!--- Jumbotron -->
-<div class="container-fluid">
-    <div class="row jumbotron">
-        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
-            <p class="lead">A web hosting service allows individuals and organizations to make their website accessible via the World Wide Web.</p>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
-            <a href="#"><button type="button" class="btn btn-outline-secondary btn-lg">Web Hosting</button></a>
-        </div>
-    </div>
-</div>
-
-<!--- Welcome Section -->
-<div class="container-fluid padding">
-    <div class="row welcome text-center">
-        <div class="col-12">
-            <h1 class="display-4">Built with ease.</h1>
-        </div>
-        <hr>
-        <div class="col-12">
-            <p class="lead">Welcome to my Bootstrap 4 website tutorial! Bootstrap is a free and open-source front-end library with HTML and CSS based designs.</p>
-        </div>
-    </div>
-</div>
-
-<!--- Three Column Section -->
-<div class="container-fluid padding">
-    <div class="row text-center padding">
-         <div class="col-xs-12 col-sm-6 col-md-4">
-             <i class="fas fa-code"></i>
-             <h3>HTML5</h3>
-             <p>Built with the latest version of HTML, HTML5.</p>
-         </div>
-         <div class="col-xs-12 col-sm-6 col-md-4">
-             <i class="fas fa-bold"></i>
-             <h3>BOOTSTRAP</h3>
-             <p>Built with the latest version of Bootstrap, Bootstrap 4.</p>
-         </div>
-         <div class="col-sm-12 col-md-4">
-             <i class="fab fa-css3"></i>
-             <h3>CSS3</h3>
-             <p>Built with the latest version of CSS, CSS3.</p>
-         </div>
-    </div>
-    <hr class="my-4">
-</div>
-
-<!--- Two Column Section -->
-<div class="container-fluid padding">
-    <div class="row padding">
-        <div class="col-md-12 col-lg-6">
-            <h2>If you build it...</h2>
-            <p>The columns will automatically stack on top of each other when the screen is less than 576 px wide.</p>
-            <p>Resize the browser window to see the effect. Responsive web design has become more important as the amount of mobile traffic now accounts for more than half of total internet traffic.</p>
-            <p>It can also display the web page differently depending on the screen size or viewing device.</p>
-            <br>
-            <a href="#" class="btn btn-primary">Learn More</a>
-        </div>
-        <div class="col-lg-6">
-            <img src="img/desk.png" class="img-fluid"> 
-        </div>
-    </div>
-</div>
-
-<hr class="my-4">
-<!--- Fixed background -->
-<figure>
-    <div class="fixed-wrap">
-        <div id="fixed">
-
-        </div>
-    </div>
-</figure>
-
-<!--- Emoji Section -->
-<button class="fun" data-toggle="collapse" data-target="#emoji">click for fun</button>
-<div id="emoji" class="collapse">
+    <!--- Welcome Section -->
     <div class="container-fluid padding">
-        <div class="row text-center">
-            <div class="col-sm-6 col-md-3">
-                <img class="gif" src="img/gif/panda.gif">
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <img class="gif" src="img/gif/poo.gif">
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <img class="gif" src="img/gif/unicorn.gif">
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <img class="gif" src="img/gif/chicken.gif">
-            </div>
-        </div>
-    </div>
-</div>
-  
-<!--- Meet the team -->
-<div class="container-fluid padding">
-    <div class="row welcome text-center">
-        <div class="col-12">
-            <h1 class="display-4">Meet the Team</h1>
-        </div>
-        <hr>
-    </div>
-</div>
-
-<!--- Cards -->
-<div class="container-fluid padding">
-    <div class="row padding">
-        <div class="col-md-4">
-            <div class="card">
-                <img class="card-img-top" src="img/team1.png">
-                <div class="card-body">
-                    <h4 class="card-title">John Doe</h4>
-                    <p class="card-text">John is an internet entrepreneur with almost 20 years of experience.</p>
-                    <a href="#" class="btn btn-outline-secondary">See Profile</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                <img class="card-img-top" src="img/team2.png">
-                <div class="card-body">
-                    <h4 class="card-title">Mary Jo</h4>
-                    <p class="card-text">Mary is a designer with almost 10 years of digital design experience.</p>
-                    <a href="#" class="btn btn-outline-secondary">See Profile</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                <img class="card-img-top" src="img/team3.png">
-                <div class="card-body">
-                    <h4 class="card-title">Phil Ho</h4>
-                    <p class="card-text">Phil is a developer with over 5 years of web development experience.</p>
-                    <a href="#" class="btn btn-outline-secondary">See Profile</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--- Two Column Section -->
-<div class="container-fluid padding">
-    <div class="row padding">
-        <div class="col-md-12 col-lg-6">
-            <h2>Our Philosophy</h2>
-            <p>We know that greatness in a disruptive era requires bold ambition, curious talent and a culture that believes we're smarter together.</p>
-            <p>We approach every challenge holistically, with best-in-class expertise in data, creativity, media, technology, search, social and more. We call this Alchemy. It has the power to build our clients' brands and transform their business. And while it may seem like magic, we've got it down to a science.</p>
-        <br>
-        </div>
-        <div class="col-lg-6">
-            <img src="img/bootstrap2.png" class="img-fluid"> 
-        </div>
-    </div>
-    <hr class="my-4">
-</div>
-
-<!--- Connect -->
-<div class="container-fluid padding">
-    <div class="row text-center padding">
-        <div class="col-12">
-            <h2>Connect</h2>
-        </div>
-        <div class="col-12 social padding">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-google-plus-g"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-        </div>
-    </div>
-</div>
-
-<!--- Footer -->
-<footer>
-    <div class="container-fluid padding">
-        <div class="row text-center">
-            <div class="col-md-4">
-                <img src="img/w3newbie.png">
-                <hr class="light">
-                <p>555-555-5555</p>
-                <p>email@myemail.com</p>
-                <p>100 Street Name</p>
-                <p>City, State 00000</p>
-            </div>
-            <div class="col-md-4">
-                <hr class="light">
-                <h5>Our Hours</h5>
-                <hr class="light">
-                <p>Monday: 9am - 5pm</p>
-                <p>Saturday: 10am - 4pm</p>
-                <p>Sunday: closed</p>
-            </div>
-            <div class="col-md-4">
-                <hr class="light">
-                <h5>Service Area</h5>
-                <hr class="light">
-                <p>City, State 00000</p>
-                <p>City, State 00000</p>
-                <p>City, State 00000</p>
-                <p>City, State 00000</p>
-            </div>
+        <div class="row welcome text-center">
             <div class="col-12">
-                <hr class="light-100">
-                <h5>&copy; w3newbie.com</h5>
+                <h1 class="display-4">Members and Subunits</h1>
+            </div>
+            <hr>
+            <div class="col-12">
+                <p class="lead">From eldest to youngest, Stray Kids' members are Bang Chan, Lee Know, Changbin, Hyunjin, Han, Felix, Seungmin, and I.N. Each of the eight members is an all-rounder. Despite their lack of positions, they are divided into three subunits which are important for fans to learn.</p>
             </div>
         </div>
     </div>
-</footer>
+
+    <!--- Three Column Section -->
+    <div class="container-fluid padding">
+        <div class="row text-center padding">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <i class="fas fa-pencil-alt"></i>
+                <h3>3RACHA</h3>
+                <p>The rap unit: Bang Chan, Changbin, and Han.</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <i class="fas fa-music"></i>
+                <h3>DANCERACHA</h3>
+                <p>The dance unit: Lee Know, Hyunjin, and Felix.</p>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <i class="fas fa-microphone"></i>
+                <h3>VOCALRACHA</h3>
+                <p>The vocal unit: Seungmin and I.N.</p>
+            </div>
+        </div>
+        <hr class="my-4">
+    </div>
+
+    <!--- Two Column Section -->
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-md-12 col-lg-6">
+                <h2>Formation and Debut</h2>
+                <p>Stray Kids, written as 스트레이 키즈 in Hangul, debuted on 25 March 2018 under JYP Entertainment.</p>
+                <p>The group was formed of nine trainees on a TV show created by JYP and Mnet, which was also named <i>Stray Kids.</i> Its purpose was for the members to receive further sculpting and even member elimination before debut.</p>
+                <p>The nine trainees are as pictured (from left to right): in the back are Felix, Woojin, Minho (Lee Know), Changbin, Jeongin (I.N), Seungmin, and in the front are Hyunjin, Jisung (Han), and Chan (Bang Chan). All nine trainees debuted with Stray Kids. However, Woojin left the group on 27 October 2019 and is now pursuing a solo career.</p>
+                <br>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+            <div class="col-lg-6">
+                <img src="img/skzdebutpic.png" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <hr class="my-4">
+    <!--- Fixed background -->
+    <figure>
+        <div class="fixed-wrap">
+            <div id="fixed">
+                <div id="layer"></div>
+            </div>
+        </div>
+    </figure>
+
+    <!--- Emoji Section -->
+    <button class="fun" data-toggle="collapse" data-target="#emoji">click for fun</button>
+    <div id="emoji" class="collapse">
+        <div class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-sm-6 col-md-3">
+                    <img class="gif" src="img/gif/hyunjinbb.gif">
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img class="gif" src="img/gif/felixbb.gif">
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img class="gif" src="img/gif/seungminbb.gif">
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img class="gif" src="img/gif/jeonginbb.gif">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--- Meet the team -->
+    <div class="container-fluid padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h1 class="display-4">3RACHA Profiles</h1>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+    <!--- Cards -->
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/chan3racha.png">
+                    <div class="card-body">
+                        <h4 class="card-title">Bang Chan</h4>
+                        <p class="card-text">Also known as CB97, Chan trained for seven years before his debut. He is
+                            very friendly and mature, making him a great leader.</p>
+                        <a href="#" class="btn btn-outline-secondary">See Profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/changbin3racha.png">
+                    <div class="card-body">
+                        <h4 class="card-title">Changbin</h4>
+                        <p class="card-text">Changbin, or SPEARB, loves dark things, but he is a softie at heart. He
+                            trained for 2 years predebut and is one of K-pop's fastest rappers.</p>
+                        <a href="#" class="btn btn-outline-secondary">See Profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/han3racha.png">
+                    <div class="card-body">
+                        <h4 class="card-title">Han</h4>
+                        <p class="card-text">Multi-talented Han (or J.ONE) trained for 3 years. He loves acting chaotic,
+                            hyper, and silly, but he is also very sentimental.</p>
+                        <a href="#" class="btn btn-outline-secondary">See Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--- Two Column Section -->
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-md-12 col-lg-6">
+                <h2>What Stray Kids Stand For</h2>
+                <p>As all the members are in their early twenties, they relate to the difficulties of adulthood, entering adulthood, and teenage life all at once.</p>
+                <p>Stray Kids' songs mainly express messages from their struggles, including sentimental, dark, and/or motivational lyrics. An example of this is: "it's so funny how I compare myself with others... just 'cause someone's ahead doesn't mean they're first... it's alright to go slowly... just keep looking forward" (translated from My Pace). Another strong example of lyrics relatable to those with mental illness is the entirety of Han's solo song <a class="alien" href="https://www.youtube.com/watch?v=M5Q7PLkHrKc">Alien</a>, in which he reflects upon the way he feels living with anxiety.</p>
+                <br>
+            </div>
+            <div class="col-lg-6">
+                <img src="img/cuties.png" class="img-fluid">
+            </div>
+        </div>
+        <hr class="my-4">
+    </div>
+
+    <!--- Connect -->
+    <div class="container-fluid padding">
+        <div class="row text-center padding">
+            <div class="col-12">
+                <h2>Connect</h2>
+            </div>
+            <div class="col-12 social padding">
+                <a href="https://www.facebook.com/JYPEStrayKids/"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/Stray_Kids"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/realstraykids/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/c/StrayKids"><i class="fab fa-youtube"></i></a>
+                <a href="https://open.spotify.com/artist/2dIgFjalVxs4ThymZ67YCE"><i class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!--- Footer -->
+    <footer>
+        <div class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <img src="img/skzlogowhite.png">
+                    <hr class="light">
+                    <p><a href="https://straykids.jype.com/">straykids.jype.com</a></p>
+                    <p>JYP Entertainment:</p>
+                    <p>02-2225-8100</p>
+                    <p>서울특별시 강동구 강동대로 205</p>
+                </div>
+                <div class="col-md-4">
+                    <hr class="light">
+                    <h5>More Information</h5>
+                    <hr class="light">
+                    <p><a href="https://en.wikipedia.org/wiki/Stray_Kids">Wikipedia Article</a></p>
+                    <p><a href="https://kprofiles.com/stray-kids-members-profile-facts/">KProfiles Profiles</a></p>
+                    <p><a href="https://www.allmusic.com/artist/stray-kids-mn0003708762/biography">AllMusic Bio</a></p>
+                </div>
+                <div class="col-md-4">
+                    <hr class="light">
+                    <h5>Top Music Videos</h5>
+                    <hr class="light">
+                    <p><a href="https://www.youtube.com/watch?v=TQTlCHxyuu8">God's Menu (2020)</a></p>
+                    <p><a href="https://www.youtube.com/watch?v=X-uJtV8ScYk">Back Door (2020)</a></p>
+                    <p><a href="https://www.youtube.com/watch?v=Dab4EENTW5I">MIROH (2019)</a></p>
+                    <p><a href="https://www.youtube.com/watch?v=pok5yDw77uM">My Pace (2018)</a></p>
+                </div>
+                <div class="col-12">
+                    <hr class="light-100">
+                    <h5>&copy; 2021 copyright</h5>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
+
 </html>
-
-
-
-
-

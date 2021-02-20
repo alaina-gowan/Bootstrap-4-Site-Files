@@ -1,12 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
+/* Color Scheme
+ * reddish brown: #482626
+ * tannish orange: #a0893a
+ * spring green: #79be70
+ * bright red: #c51d25
+ * soft black: #2d2926
+*/
+
 
 /*---website---*/
 html,body {
   height: 100%;
   width: 100%;
   font-family:'Poppins', sans-serif;
-  color: #222;
+  color: #2d2926;
 }
 
 
@@ -41,12 +49,12 @@ html,body {
   padding-bottom:1rem;
 }
 .btn-primary {
-  background-color:#6648B1;
-  border: 1px solid #6648B1;
+  background-color:#c51d25;
+  border: 1px solid #c51d25;
 }
 .btn-primary:hover {
-  background-color: #563D7C;
-  border: 1px solid #563d7c;
+  background-color: #891419;
+  border: 1px solid #891419;
 }
 
 
@@ -79,16 +87,16 @@ html,body {
 
 
 /*---Font Awesome icon---*/
-.fa-code {
-  color:#e54d26;
+.fa-pencil-alt {
+  color:#ab2e32;
 }
-.fa-bold {
-  color: #563d7c;
+.fa-music {
+  color: #9f00c5;
 }
-.fa-css3 {
-  color:#2163af;
+.fa-microphone {
+  color:#0bda51;
 }
-.fa-code, .fa-bold, .fa-css3 {
+.fa-pencil-alt, .fa-music, .fa-microphone {
   font-size:4em;
   margin: 1rem;
 }
@@ -114,8 +122,8 @@ html,body {
 .fa-twitter {
   color: #00aced;
 }
-.fa-google-plus-g {
-  color: #dd4b39;
+.fa-spotify {
+  color: #1DB954;
 }
 .fa-instagram {
   color:#517fa4
@@ -125,7 +133,7 @@ html,body {
 }
 .fa-facebook:hover, 
 .fa-twitter:hover, 
-.fa-google-plus-g:hover, 
+.fa-spotify:hover, 
 .fa-instagram:hover, 
 .fa-youtube:hover {
   color: #d5d5d5;
@@ -134,7 +142,7 @@ html,body {
 
 /*---footer---*/
 footer {
-  background-color: #3f3f3f;
+  background-color: #482626;
   color: #d5d5d5;
   padding-top: 2rem;
 }
@@ -147,11 +155,38 @@ hr.light {
 footer a {
   color: #d5d5d5;
 }
+
+footer a:hover {
+  color: #c51d25;
+}
 hr.light-100 {
   border-top: 1px solid #d5d5d5;
   width: 100%;
   margin-top: .8rem;
   margin-bottom:1rem;
+}
+
+.btn-outline-secondary {
+  background-color:#79be70;
+  border: 1px solid #79be70;
+  color:white;
+}
+.btn-outline-secondary:hover {
+  background-color: #54854e;
+  border: 1px solid #54854e;
+  color:white;
+}
+
+.alien {
+  color: #c51d25;
+}
+
+.alien:visited{
+  color: #482626;
+}
+
+.alien:hover {
+  color: #891419;
 }
 
 
@@ -237,7 +272,7 @@ figure {
   height: 100%;
 }
 #fixed {
-  background-image: url('img/mac.png');
+  background-image: url('img/skzfamily.png');
   position: fixed;
   display: block;
   top: 0;
@@ -250,6 +285,23 @@ figure {
           transform: translateZ(0);
   will-change: transform;
 }
+
+#layer {
+  background-color:#482626;
+  opacity:.7;
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+
 /*--- Bootstrap Padding Fix --*/
 [class*="col-"] {
     padding: 1rem;
